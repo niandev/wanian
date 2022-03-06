@@ -24,7 +24,7 @@ app.use(fileUpload({
   debug: true
 }));
 
-const SESSION_FILE_PATH = './whatsapp-session.json';
+const SESSION_FILE_PATH = './sessions/whatsapp-session.json';
 let sessionCfg;
 if (fs.existsSync(SESSION_FILE_PATH)) {
   sessionCfg = require(SESSION_FILE_PATH);
